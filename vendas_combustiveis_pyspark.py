@@ -19,8 +19,8 @@ if __name__ == '__main__':
 def main(name):
         extract = read_tabela(name)
         transform = transformar(extract)
-        #load = write_df(transform, name)
-        #return load
+        load = write_df(transform, name)
+        return load
 
 # cria o dataframe a partir da leitura do arquivo .xls, preenche valores nulos com 0 e retira caracteres especiais
 def read_tabela(name):
